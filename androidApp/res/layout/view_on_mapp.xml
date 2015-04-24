@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/appbg" >
+    <FrameLayout
+	    android:layout_width="fill_parent"
+		android:layout_height="44dip"
+	    android:background="@drawable/bg_base_gradient">
+	    <ImageButton
+	        android:id="@+id/mappbackButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dip"
+	        android:layout_gravity="center_vertical|left"
+	       	android:layout_marginLeft="5dp"
+	        android:src="@drawable/icon_back"
+	        android:contentDescription="@string/AllImages"
+	        android:background="@drawable/button_base_shape" />
+		<LinearLayout
+		    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_vertical|right">
+    		<ImageButton
+	        	android:id="@+id/locationButton"
+	        	android:layout_width="35dip"
+	        	android:layout_height="35dip"	        	
+	        	android:layout_marginRight="10dp"
+	        	android:src="@drawable/icon_location"
+	        	android:contentDescription="@string/AllImages"
+	        	android:background="@drawable/button_base_shape" />    		    		
+	    </LinearLayout>    
+	 </FrameLayout>
+	 <com.google.android.maps.MapView
+    		android:id="@+id/mapview"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+	    	android:clickable="true"
+    		android:apiKey="0ugocwZQl3EFkSXoW9WgGbzs5x8A6SUl4hGPz8Q"
+			android:layout_marginBottom="30dip"/>
+	  <!-- DEBUG MAP -->
+	<!-- <com.google.android.maps.MapView
+    		android:id="@+id/mapview"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+	    	android:clickable="true"
+    		android:apiKey="0ugocwZQl3EGsHggX64RwKxYrxFu0qb38fcXBFw"
+			android:layout_marginBottom="30dip"/>-->
+	 <!-- LIVE MAP -->
+	 <FrameLayout 
+	    android:layout_width="fill_parent"
+		android:layout_height="33dip"
+	    android:background="@color/transparent">	    
+	</FrameLayout>
+</LinearLayout>

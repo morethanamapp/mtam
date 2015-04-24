@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/morephotosButton"
+    android:layout_width="81dip"
+    android:layout_height="22dip"
+    android:background="@drawable/more_content_photos"
+    android:onClick="showMorePhotos" />

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg" >
+    <LinearLayout
+        android:id="@+id/contentFrame" 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+    	<ImageView
+     		android:id="@+id/imageLogoView"
+     		android:layout_width="180dip"
+     		android:layout_height="95dip"
+     		android:contentDescription="@string/AllImages"
+     		android:layout_gravity="center_horizontal"
+     		android:src="@drawable/mtam_logo" />
+    	<ImageView
+     		android:id="@+id/addapoint_title"
+     		android:layout_width="128dip"
+     		android:layout_height="22dip"
+     		android:contentDescription="@string/AllImages"
+     		android:layout_gravity="left"
+     		android:paddingLeft="10dip"
+     		android:src="@drawable/title_add_a_point" />
+
+    	<TextView
+    	    android:id="@+id/status_message"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="10dip"
+    	    android:paddingLeft="10dip"
+    	    android:layout_marginBottom="10dip"
+    	    android:text="@string/DefaultStatusText"
+    	    android:textColor="@color/white"
+    	    android:textSize="16sp" />
+    	<Button
+    	    android:id="@+id/buttonSignin"
+    	    android:layout_width="162dip"
+    	    android:layout_height="42dip"
+    	    android:layout_gravity="left"
+    	    android:layout_marginRight="2dip"
+    	    android:background="@drawable/button_sign_in" />
+    	<Button
+    	    android:id="@+id/buttonNewMapper"
+    	    android:layout_width="162dip"
+    	    android:layout_height="42dip"
+    	    android:layout_gravity="left"
+    	    android:layout_marginRight="2dip"
+    	    android:background="@drawable/button_new_mapper" />
+    	<Button
+    	    android:id="@+id/buttonSignout"
+    	    android:layout_width="162dip"
+    	    android:layout_height="42dip"
+    	    android:layout_gravity="left"
+    	    android:layout_marginRight="2dip"
+    	    android:background="@drawable/button_sign_out" />
+    	<TextView
+    	    android:id="@+id/add_point_message"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginBottom="10dip"
+    	    android:layout_marginTop="10dip"
+    	    android:paddingLeft="10dip"
+    	    android:text="@string/DefaultAddLocText"
+    	    android:textColor="@color/white"
+    	    android:textSize="16sp" />
+
+    	<Button
+    	    android:id="@+id/buttonAddAPoint"
+    	    android:layout_width="162dip"
+    	    android:layout_height="42dip"
+    	    android:layout_gravity="left"
+    	    android:layout_marginRight="2dip"
+    	    android:background="@drawable/button_ad_a_point" />
+    	
+    </LinearLayout>
+    <RelativeLayout
+     	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content">
+
+     	<Button
+     	    android:id="@+id/closebutton"
+     	    android:layout_width="43dip"
+     	    android:layout_height="44dip"
+     	    android:layout_alignParentRight="true"
+     	    android:layout_alignParentTop="true"
+     	    android:layout_marginTop="5dp"
+     	    android:layout_marginRight="5dp"
+     	    android:background="@drawable/icon_close" />
+ 
+    </RelativeLayout>
+    <RelativeLayout
+   	    android:layout_width="fill_parent" 
+   	    android:layout_height="35dip"
+   	    android:layout_gravity="bottom">
+
+  	    <Button
+  	        android:id="@+id/infobutton"
+  	        android:layout_width="28dip"
+  	        android:layout_height="28dip"
+  	        android:layout_alignParentRight="true"
+  	        android:layout_alignParentTop="true"
+  	        android:layout_marginRight="10dp"
+  	        android:background="@drawable/icon_info" />
+  	    
+    </RelativeLayout>
+</FrameLayout>

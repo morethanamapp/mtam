@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MTAMActivity!</string>
+    <string name="app_name">MTAM</string>
+    <string name="Splashdesc">Splash Image</string>
+    <string name="AllImages">ImageDescription</string>
+    <string name="DefaultStatusText">Please Sign in to add your  point. Not a mapper? Set up your account now. Just click on \'New Mapper\'</string>
+    <string name="DefaultAddLocText">Found a cool location? You can add it to your MAPP by clicking Add a Point.</string>
+    <string name="OR">- OR -</string>
+    <string name="Iagree">I agree to the </string>
+    <string name="termsAndCondition">terms and conditions</string>
+    <string name="forgotPassword">Forgot Your Password?</string>
+    
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Location Name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+    <string name="desc">Description</string>
+    <string name="state">Select A State   >   </string>
+    <string name="choosephoto">Choose Photo ></string>
+    
+    
+    <string name="doneButton">Done</string>
+    <string name="stateListTitle">Select A State</string>
+    <string name="TwitterAuth">Twitter Authorization</string>
+    
+    <color name="black">#000000</color>
+    <color name="translucent_grey">#80000000</color>
+	<color name="transparent">#00000000</color>
+	<color name="white">#ffffff</color>
+	<color name="translucent_orange">#80ff9600</color>
+	<color name="orange">#ff9600</color>
+	<color name="twitterblue">#7cb4da</color>
+</resources>

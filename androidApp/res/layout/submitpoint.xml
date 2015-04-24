@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+   	android:layout_width="match_parent"
+   	android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/appbg" >
+    <ScrollView
+	     android:layout_width="match_parent"
+	     android:layout_height="0dip"
+	     android:layout_weight="1">
+	    <LinearLayout 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		    android:orientation="vertical" >    	
+	    	<Button
+	     	    android:id="@+id/closebutton"
+	     	    android:layout_width="43dip"
+	     	    android:layout_height="44dip"	     	    
+	     	    android:layout_marginTop="5dp"
+	     	    android:layout_marginRight="5dp"
+	     	    android:layout_gravity="right"
+	     	    android:background="@drawable/icon_close" />
+	    	<EditText
+	    	    android:id="@+id/loc_name"
+	    	    android:layout_width="280dip"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:hint="@string/name"
+	    	    android:inputType="text"
+	    	    android:layout_marginTop="10dip" >
+	    	    
+	    	    <requestFocus />
+	    	    
+	    	</EditText>	
+	    	<EditText
+	    	    android:id="@+id/loc_address"
+	    	    android:layout_width="280dip"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:hint="@string/address"
+	    	    android:inputType="textPostalAddress" />
+	    	
+	    	<EditText
+	    	    android:id="@+id/loc_city"
+	    	    android:layout_width="280dip"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:hint="@string/city"
+	    	    android:inputType="text" />	
+	    	<Button
+	    	    android:id="@+id/selectStateButton"
+	    	    android:layout_width="280dip"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:text="@string/state" />
+	    	
+	    	<EditText
+	    	    android:id="@+id/loc_zip"
+	    	    android:layout_width="280dip"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:hint="@string/zip"
+	    	    android:inputType="number" />
+	    	
+	    	<EditText
+	    	    android:id="@+id/loc_description"
+	    	    android:layout_width="280dip"
+	    	    android:layout_height="100dip"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:hint="@string/desc"
+	    	    android:inputType="textMultiLine" />
+	    	
+	    	<LinearLayout
+	    	     android:layout_width="280dip"
+	    	     android:layout_height="wrap_content"
+	    	     android:layout_marginTop="10dip"
+	    	     android:layout_gravity="center_horizontal">
+	    	    
+	    	    <ImageView
+	    	        android:id="@+id/photoSelectedImageView"
+	    	        android:layout_width="80dip"
+	    	        android:layout_height="80dip"
+	    	        android:layout_marginRight="10dip"
+	    	        android:contentDescription="@string/AllImages"
+	    	        android:src="@drawable/questionmark" />
+	    	    <Button
+	    	    	android:id="@+id/selectPhotoButton"
+	    	    	android:layout_width="fill_parent"
+	    	    	android:layout_height="fill_parent"	    	    	
+	    	    	android:text="@string/choosephoto" />
+	    	</LinearLayout>
+	    	
+	    	<LinearLayout
+	    	    android:layout_width="280dip"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginTop="10dip"
+	    	    android:layout_gravity="center_horizontal">
+
+	    		<CheckBox
+	    		    android:id="@+id/agreeCheckBox"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content" />
+
+	    		<TextView
+	    		    android:id="@+id/textView1"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:text="@string/Iagree"
+	    		    android:paddingLeft="8dip" />
+
+	    		<Button
+	    		    android:id="@+id/agreeButton"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:background="@color/transparent"
+	    		    android:paddingTop="8dip"
+	    		    android:paddingLeft="2dip"
+	    		    android:paddingBottom="8dip"
+	    		    android:paddingRight="8dip"
+	    		    android:text="@string/termsAndCondition"
+	    		    android:textColor="@color/orange" />
+	    	    
+	    	</LinearLayout>
+	    	
+	    	<Button
+	    	    android:id="@+id/registerButton"
+	    	    android:layout_width="162dip"
+	    	    android:layout_height="42dip"
+	    	    android:layout_gravity="center_horizontal"
+	    	    android:layout_marginTop="20dip"
+	    	    android:layout_marginBottom="40dip"
+	    	    android:background="@drawable/button_register" />
+	    	
+	    </LinearLayout>
+	    </ScrollView>
+	    <FrameLayout 
+		    android:layout_width="fill_parent"
+			android:layout_height="33dip"
+		    android:background="@color/transparent"
+		    android:layout_gravity="bottom">	    
+		</FrameLayout>
+    </LinearLayout>
+    <!-- <RelativeLayout
+     	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content">
+
+     	<Button
+     	    android:id="@+id/closebutton"
+     	    android:layout_width="43dip"
+     	    android:layout_height="44dip"
+     	    android:layout_alignParentRight="true"
+     	    android:layout_alignParentTop="true"
+     	    android:layout_marginTop="5dp"
+     	    android:layout_marginRight="5dp"
+     	    android:background="@drawable/icon_close" />
+ 
+    </RelativeLayout>   -->

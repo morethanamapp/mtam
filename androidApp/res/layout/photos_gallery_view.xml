@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <com.development.mtam.CustomGallery
+        android:id="@+id/photos_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:spacing="25dip" />
+	<RelativeLayout
+  		android:layout_width="fill_parent"
+    	android:layout_height="50dip"    		
+    	android:background="@color/translucent_grey"
+    	android:layout_gravity="bottom">
+
+    	<Button
+    	    android:id="@+id/fwdbutton"
+    	    android:layout_width="32dip"
+    	    android:layout_height="30dip"
+    	    android:layout_centerVertical="true"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginRight="14dp"
+    	    android:background="@drawable/browser_forward" />
+
+    	<Button
+    	    android:id="@+id/backbutton"
+    	    android:layout_width="32dip"
+    	    android:layout_height="30dip"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="14dp"
+    	    android:background="@drawable/browser_back" />
+
+    </RelativeLayout>
+</FrameLayout>

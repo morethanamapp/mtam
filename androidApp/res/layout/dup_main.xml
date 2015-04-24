@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/appbg"
+    android:orientation="vertical" >  
+     
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/mtam_logo" />
+
+            <Button
+                android:id="@+id/homebutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/home_aboutbutton_layout" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/homebutton1"
+                android:layout_alignTop="@+id/homebutton1"
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/path_line" />
+
+            <Button
+                android:id="@+id/homebutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_marginLeft="38dp"
+                android:background="@drawable/home_addpointbutton_layout" />
+
+            <Button
+                android:id="@+id/homebutton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homebutton2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/home_mappbutton_layout" />
+
+        </RelativeLayout>
+    
+</LinearLayout>

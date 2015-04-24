@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/appbg" >
+    <FrameLayout
+	    android:layout_width="fill_parent"
+		android:layout_height="44dip"
+	    android:background="@drawable/bg_base_gradient">
+	    <ImageButton
+	        android:id="@+id/pointbackButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dip"
+	        android:layout_gravity="center_vertical|left"
+	       	android:layout_marginLeft="5dp"
+	        android:src="@drawable/icon_back"
+	        android:contentDescription="@string/AllImages"
+	        android:background="@drawable/button_base_shape" />
+		<LinearLayout
+		    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_vertical|right">
+    		<ImageButton
+	        	android:id="@+id/directionsButton"
+	        	android:layout_width="35dip"
+	        	android:layout_height="35dip"	        	
+	        	android:layout_marginRight="10dp"
+	        	android:src="@drawable/icon_directions_v2"
+	        	android:contentDescription="@string/AllImages"
+	        	android:background="@drawable/button_base_shape" />
+    		<ImageButton
+	        	android:id="@+id/shareButton"
+	        	android:layout_width="35dip"
+	        	android:layout_height="35dip"	        	
+	        	android:layout_marginRight="10dp"
+	        	android:src="@drawable/icon_share"
+	        	android:contentDescription="@string/AllImages"
+	        	android:background="@drawable/button_base_shape" />
+    		
+	    	<ImageButton
+	        	android:id="@+id/bookmarkButton"
+	        	android:layout_width="35dip"
+	        	android:layout_height="35dip"	        	
+	        	android:layout_marginRight="5dp"
+	        	android:src="@drawable/icon_bookmark_v2"
+	        	android:contentDescription="@string/AllImages"
+	        	android:background="@drawable/button_base_shape" />	    	    	
+	    </LinearLayout>    
+	 </FrameLayout>
+	 <ScrollView
+	     android:layout_width="match_parent"
+	     android:layout_height="0dip"
+	     android:layout_weight="1">
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical">
+			 <FrameLayout
+			     android:layout_width="297dip"
+			     android:layout_height="220dip"
+			     android:layout_gravity="center_horizontal"
+			     android:layout_marginTop="0dip"
+			     android:background="@drawable/image_profile_base" >
+			     <ImageView
+			         android:id="@+id/imageProfile"
+			         android:layout_width="254dip"
+			         android:layout_height="165dip"
+			         android:layout_gravity="center_horizontal"
+			         android:layout_marginTop="20dip"
+			         android:contentDescription="@string/AllImages" />
+		
+			 </FrameLayout>
+			 <FrameLayout
+			     android:layout_width="297dip"
+			     android:layout_height="43dip"
+			     android:layout_gravity="center_horizontal"
+			     android:layout_marginTop="5dip">
+			     <Button
+		         	android:id="@+id/viewonmapButton"
+		            android:layout_width="140dip"
+		            android:layout_height="43dip"
+		            android:layout_gravity="right"            
+		            android:layout_marginRight="10dip"
+		            android:background="@drawable/button_view_on_map" />
+			 </FrameLayout>
+			 <LinearLayout
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:orientation="vertical">
+			     <TextView
+			         android:id="@+id/landmark_title"
+			         android:layout_width="fill_parent"
+			         android:layout_height="wrap_content"
+			         android:layout_marginTop="5dip"
+			         android:paddingLeft="20dip"
+			         android:textColor="@color/orange"
+			         android:textSize="18sp"
+			         android:textStyle="bold" />
+			     <TextView
+		        	android:id="@+id/landmark_address"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textSize="14sp" 		
+		 			android:textColor="@color/white"
+		 			android:layout_marginTop="5dip"
+		 			android:paddingLeft="20dip" />
+		    	<TextView
+		        	android:id="@+id/landmark_desc"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:textSize="14sp" 		
+		 			android:textColor="@color/white"
+		 			android:layout_marginTop="10dip"
+		 			android:paddingLeft="20dip" />
+			 </LinearLayout>
+			 <FrameLayout
+			     android:id="@+id/moreContentFrame"
+			     android:layout_width="221dip"
+			     android:layout_height="108dip"
+			     android:layout_gravity="center_horizontal"
+			     android:layout_marginTop="15dip"
+			     android:layout_marginBottom="35dip"
+			     android:background="@drawable/more_content_bg">
+			     <!--<Button
+		         	android:id="@+id/morephotosButton"
+		            android:layout_width="81dip"
+		            android:layout_height="22dip"
+		            android:layout_gravity="left"            
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginTop="15dip"
+		            android:background="@drawable/more_content_photos" />
+			     <Button
+		         	android:id="@+id/morevideosButton"
+		            android:layout_width="74dip"
+		            android:layout_height="25dip"
+		            android:layout_gravity="right"            
+		            android:layout_marginRight="20dip"
+		            android:layout_marginTop="15dip"
+		            android:background="@drawable/more_content_video" />
+			     <Button
+		         	android:id="@+id/moreaudiosButton"
+		            android:layout_width="71dip"
+		            android:layout_height="25dip"
+		            android:layout_gravity="left|bottom"            
+		            android:layout_marginLeft="20dip"
+		            android:layout_marginBottom="15dip"
+		            android:background="@drawable/more_content_audio" />
+			     <Button
+		         	android:id="@+id/morelinksButton"
+		            android:layout_width="70dip"
+		            android:layout_height="23dip"
+		            android:layout_gravity="right|bottom"            
+		            android:layout_marginRight="20dip"
+		            android:layout_marginBottom="15dip"
+		            android:background="@drawable/more_content_links" />-->
+			 </FrameLayout>
+	 	</LinearLayout>
+	 </ScrollView>
+	 <FrameLayout 
+	    android:layout_width="fill_parent"
+		android:layout_height="33dip"
+	    android:background="@color/transparent"
+	    android:layout_gravity="bottom">	    
+	</FrameLayout>
+</LinearLayout>
